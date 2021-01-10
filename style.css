@@ -15,7 +15,7 @@
 
 body {
   font-size: 15px;
-  font-family: "Alata";
+  font-family: "Alata", sans-serif;
   font-weight: 400;
 }
 
@@ -28,8 +28,54 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   padding: 50px 20px;
   margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.title {
+  max-width: 45%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 20px;
+  border: 1px solid var(--white);
+  margin-top: 100px;
+  margin-bottom: 70px;
 }
