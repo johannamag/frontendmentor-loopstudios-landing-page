@@ -68,7 +68,7 @@ body {
 }
 
 .title {
-  max-width: 45%;
+  width: 45%;
   font-family: "Josefin Sans", sans-serif;
   font-size: 4rem;
   font-weight: 300;
@@ -78,4 +78,85 @@ body {
   border: 1px solid var(--white);
   margin-top: 100px;
   margin-bottom: 70px;
+}
+
+@media screen and (max-width: 1078px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 838px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .logo {
+    z-index: 1500;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--black);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1400;
+    padding-left: 20px;
+    transform: translateX(120%);
+    transition: all 0.5s;
+  }
+  .nav-item {
+    font-size: 1.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .mobile-menu {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+  }
+  .close {
+    display: none;
+  }
+  .open.hamburger {
+    display: none;
+  }
+  .open.close {
+    display: block;
+    z-index: 1500;
+  }
+  .open.nav-items {
+    transform: translateX(0);
+  }
+  .title {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header {
+    background-image: url("./media/mobile/image-hero.jpg");
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .title {
+    width: 100%;
+  }
 }
