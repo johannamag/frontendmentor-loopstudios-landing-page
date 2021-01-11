@@ -192,3 +192,42 @@ body {
   color: var(--gray);
   font-weight: 400;
 }
+
+@media screen and (max-width: 990px) {
+  .hero-img {
+    width: 550px;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .hero-flex {
+    flex-direction: column;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .hero-right {
+    transform: translateX(0);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .hero-right {
+    width: 100%;
+  }
+  .heading {
+    font-size: 2.2rem;
+  }
+}
