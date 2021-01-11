@@ -231,3 +231,122 @@ body {
     font-size: 2.2rem;
   }
 }
+/* CREATIONS */
+
+.mobile {
+  display: none;
+}
+
+.creations-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.creations-header > .heading {
+  margin-bottom: 0;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid var(--black);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.creations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.grid-card {
+  width: 100%;
+  height: 420px;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: bottom;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.grid-card:hover {
+  transform: scale(1.05);
+}
+
+.one {
+  background-image: url("./media/desktop/image-deep-earth.jpg");
+}
+
+.two {
+  background-image: url("./media/desktop/image-night-arcade.jpg");
+}
+
+.three {
+  background-image: url("./media/desktop/image-soccer-team.jpg");
+}
+
+.four {
+  background-image: url("./media/desktop/image-grid.jpg");
+}
+
+.four > .card-title {
+  width: 40%;
+}
+
+.five {
+  background-image: url("./media/desktop/image-from-above.jpg");
+}
+
+.six {
+  background-image: url("./media/desktop/image-pocket-borealis.jpg");
+}
+
+.seven {
+  background-image: url("./media/desktop/image-curiosity.jpg");
+}
+
+.eight {
+  background-image: url("./media/desktop/image-fisheye.jpg");
+}
+
+.card-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  width: 70%;
+}
+
+.attribution {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.attribution > a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s ease-in-out;
+}
+
+.attribution > a:hover {
+  border-bottom: 1px solid var(--dark-gray);
+}
