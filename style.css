@@ -402,6 +402,37 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .one {
+    background-image: url("./media/mobile/image-deep-earth.jpg");
+  }
+
+  .two {
+    background-image: url("./media/mobile/image-night-arcade.jpg");
+  }
+
+  .three {
+    background-image: url("./media/mobile/image-soccer-team.jpg");
+  }
+
+  .four {
+    background-image: url("./media/mobile/image-grid.jpg");
+  }
+
+  .five {
+    background-image: url("./media/mobile/image-from-above.jpg");
+  }
+
+  .six {
+    background-image: url("./media/mobile/image-pocket-borealis.jpg");
+  }
+
+  .seven {
+    background-image: url("./media/mobile/image-curiosity.jpg");
+  }
+
+  .eight {
+    background-image: url("./media/mobile/image-fisheye.jpg");
+  }
 }
 
 @media screen and (max-width: 370px) {
