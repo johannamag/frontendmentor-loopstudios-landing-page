@@ -490,3 +490,28 @@ body {
 .copyright {
   color: var(--gray);
 }
+
+@media screen and (max-width: 698px) {
+  .footer-flex {
+    flex-direction: column;
+  }
+  .footer-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer-left {
+    margin-bottom: 30px;
+  }
+  .social-media {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer-link {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
